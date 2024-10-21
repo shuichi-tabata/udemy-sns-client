@@ -19,6 +19,7 @@ type Props = {
   posts: PostType[];
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const getServerSideProps: GetServerSideProps = async (context: any) => {
   const { userId } = context.query;
 
